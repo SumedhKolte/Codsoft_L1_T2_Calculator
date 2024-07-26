@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="calculator-display" id="display">0</div>
+        <div class="calculator-keys">
+            <!-- buttons -->
+            <button class="key key-operator" data-action="clear">AC</button>
+            <button class="key key-operator" data-action="delete">DEL</button>
+            <button class="key key-operator" data-value="%">%</button>
+            <button class="key key-operator" data-action="operation" data-value="*">×</button>
+            <button class="key" data-value="7">7</button>
+            <button class="key" data-value="8">8</button>
+            <button class="key" data-value="9">9</button>
+            <button class="key key-operator" data-action="operation" data-value="-">−</button>
+            <button class="key" data-value="4">4</button>
+            <button class="key" data-value="5">5</button>
+            <button class="key" data-value="6">6</button>
+            <button class="key key-operator" data-action="operation" data-value="+">+</button>
+            <button class="key" data-value="1">1</button>
+            <button class="key" data-value="2">2</button>
+            <button class="key" data-value="3">3</button>
+            <button class="key key-operator" data-action="operation" data-value="/">÷</button>
+            <button class="key" data-value="00">00</button>
+            <button class="key" data-value="0">0</button>
+            <button class="key" data-value=".">.</button>
+            <button class="key key-equal" data-action="equal">=</button>
+        </div>
+        <button id="show-history" class="button">Show History</button>
+        <button id="delete-history" class="button">Delete History</button>
+        <button id="toggle-dark-mode" class="button">Dark Mode</button>
+        <div class="calculator-history" id="history">
+            <h3>History</h3>
+            <ul id="history-list"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
